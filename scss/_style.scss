@@ -1,0 +1,88 @@
+/*MOBILE FIRST*/
+/*FONTS*/
+
+@font-face {
+  font-family: SegoeWpLight;
+  src: url(../fonts/SegoeWpLight.ttf);
+}
+body{
+  font-family:'SegoeWpLight';
+  font-size:1rem;
+
+}
+.my-6{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.my-7{
+  margin-top:35px;
+  margin-bottom:35px;
+}
+.navbar-brand{
+  padding-left:6%;
+}
+
+.navbar-brand p{
+  font-size:2.6rem;
+  color:#000;
+}
+.lh-2{
+  line-height: 2;
+}
+
+#a, #b{
+  height:300px;
+  width:300px;
+}
+#a{
+  background-color:red;
+}
+#a:hover  #b{
+  display:block;
+}
+#b{
+  background-color:yellow;
+  opacity: 50%;
+  top:0px;
+  left:0px;
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  font-size:14px;
+}
+
+p{font-size:2px;}
+$mijnstandaardfontcolor: blue;
+$mijnstandaardfontsize: 2px;
+body{
+  font-size:14px;
+  p{
+    font-size:$mijnstandaardfontsize;
+  }
+}
+
+.mijnsectie{
+  color:red;
+  p{
+    font-size:4px;
+  }
+
+
+}

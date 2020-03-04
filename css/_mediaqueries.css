@@ -1,0 +1,11 @@
+/**CSS GROTER DAN MOBIEL**/
+@use 'style';
+/*sm*/
+/*md*/
+/*lg*/
+@media (min-width: 992px) {
+  .my-7 {
+    margin-top: 75px;
+    margin-bottom: 75px; } }
+
+/*xl*/
