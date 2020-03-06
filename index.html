@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>BOOTSTRAP SCSS</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row my-6">
-        <div class="col-lg-10 offset-lg-1">
-            <nav class="row navbar navbar-expand-lg px-0">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1" id="navbarContainer">
+            <nav class="row navbar navbar-expand-lg px-0 pb-0">
                 <div class="col-lg-7">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="img/logo.png" height="44" width="44" class="d-inline-block align-top" alt="">
+                    <a class="navbar-brand d-flex flex-column flex-lg-row align-items-center" href="#">
+                        <img alt="" class="d-inline-block align-top" height="44" src="img/logo.png" width="44">
                         <p class="m-0 pl-3">Prechu</p>
                     </a>
                 </div>
-                <div class="col-lg-5 mt-auto">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="col-lg-5 mt-auto text-center">
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler custom-toggler" data-target="#navbarSupportedContent"
+                            data-toggle="collapse" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -44,118 +46,106 @@
 
                     </div>
                 </div>
-
-
-
             </nav>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+            <div class="carousel slide d-none d-lg-block" data-ride="carousel" id="carouselExampleCaptions">
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/background_slider.png" class="d-block w-100" alt="...">
+                        <img alt="..." class="d-block w-100" src="img/background_slider.png">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            <a href="" class="btn btn-primary rounded-0">
+                            <h2>Lorem Ipsum is Simply</h2>
+                            <p>dummy text of the <br> printing & typesetting</p>
+                            <a class="btn rounded-0" href="">
                                 <i class="fa fa-check-circle"></i>
-                                sign up now
+                                Sign up now
                             </a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/background_slider.png" class="d-block w-100" alt="...">
+                        <img alt="..." class="d-block w-100" src="img/background_slider.png">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h2>Lorem Ipsum is Simply</h2>
+                            <p>dummy text of the <br> printing & typesetting</p>
+                            <a class="btn rounded-0" href="">
+                                <i class="fa fa-check-circle"></i>
+                                Sign up now
+                            </a>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/background_slider.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block w-100" src="img/background_slider.png">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h2>Lorem Ipsum is Simply</h2>
+                            <p>dummy text of the <br> printing & typesetting</p>
+                            <a class="btn rounded-0" href="">
+                                <i class="fa fa-check-circle"></i>
+                                Sign up now
+                            </a>
                         </div>
                     </div>
+
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleCaptions" role="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next" data-slide="next" href="#carouselExampleCaptions" role="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="row my-7">
-                <div class="col-12 col-lg-4 text-center">
-                    <img class="rounded-circle bg-primary" src="img/pencil.png" alt="pencil">
-                    <h2 class="text-primary">Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad aspernatur distinctio dolorem eum eveniet harum
-                        illo nisi non obcaecati, perferendis similique
-                        temporibus vel, velit.
-                        Debitis esse inventore omnis sequi velit!</p>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                    <img class="rounded-circle bg-danger" src="img/pc.png" alt="pencil">
-                    <h2 class="text-primary">Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad aspernatur distinctio dolorem eum eveniet harum
-                        illo nisi non obcaecati, perferendis similique
-                        temporibus vel, velit.
-                        Debitis esse inventore omnis sequi velit!</p>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                    <img class="rounded-circle bg-warning" src="img/basket.png" alt="pencil">
-                    <h2 class="text-primary">Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad aspernatur distinctio dolorem eum eveniet harum
-                        illo nisi non obcaecati, perferendis similique
-                        temporibus vel, velit.
-                        Debitis esse inventore omnis sequi velit!</p>
-                </div>
-
-            </div>
             <div class="row">
+
+                <div class="col-12">
+                    <section class="row my-7" id="myarticles">
+                        <article class="col-12 col-lg-4 text-center">
+                            <img alt="pencil" class="rounded-circle" id="pencil" src="img/pencil.png">
+                            <h4 class="text-primary">Lorem ipsum</h4>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </article>
+                        <article class="col-12 col-lg-4 text-center">
+                            <img alt="desktop" class="rounded-circle bg-danger" src="img/pc.png">
+                            <h4 class="text-primary">Lorem ipsum</h4>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </article>
+                        <article class="col-12 col-lg-4 text-center">
+                            <img alt="basket" class="rounded-circle bg-warning" src="img/basket.png">
+                            <h4 class="text-primary">Lorem ipsum</h4>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </article>
+
+                    </section>
+                </div>
+            </div>
+            <section id="fullArticle" class="row">
+
                 <div class="col-12 col-lg-5 text-center">
-                    <h3>The Shopping Cart</h3>
-                    <img class="img-fluid" src="img/bigbasket.png" alt="">
+                    <h3 class="text-center">The Shopping cart</h3>
+                    <img alt="" class="img-fluid" src="img/bigbasket.png">
                 </div>
                 <div class="col-12 col-lg-7">
-                    <h4>Same Bullet Text Here</h4>
-                    <p class="lh-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci aliquam commodi debitis enim ex fugiat fugit
-                        impedit in inventore, necessitatibus
-                        nemo pariatur, quidem quos sapiente sit tempora tempore. Deserunt, minima?</p>
+                    <h4>Same Bullet text here</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                        Lorem Ipsum has been the industry's standard dummy text ever
+                        When an unknown printer took a galley of type and scrambled
+                        It to make a type specimen book. It has survived not only five centuries
+                        But also the leap into electronic typesetting,
+                        Remaining essentially unchanged. It was popularised
+                        The release of Letraset sheets containing Lorem Ipsum passages</p>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-    <div class="position-relative">
-        <div id="a">
-            <h2></h2>
-            <img src="" alt="">
-            <p></p>
-
-        </div>
-        <div id="b" class="position-absolute">
-            <button>a</button>
-        </div>
-    </div>
-
-    <a href="img/bigbasket.png" data-lightbox="roadtrip">Image #2</a>
-    <a href="img/basket.png" data-lightbox="roadtrip">Image #3</a>
-    <a href="img/vinkje.png" data-lightbox="roadtrip">Image #4</a>
 </div>
+
+<footer>
+    <p class="text-center">Copyright &copy; 2012-2013 cssauthor.com</p>
+</footer>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/lightbox.js"></script>
-<script>
-    lightbox.option({
-        'resizeDuration': 1000,
-        'wrapAround': true,
-        'fadeDuration': 2000,
-    })
-</script
+<script src="js/all.min.js"></script>
+
 </body>
 </html>
